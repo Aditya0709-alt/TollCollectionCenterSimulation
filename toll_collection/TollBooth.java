@@ -2,8 +2,7 @@ package toll_collection;
 
 import vehicle.Truck;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class TollBooth {
 
@@ -43,13 +42,13 @@ public class TollBooth {
 
                         try {
                             collectionThread.join();
-                        } catch (InterruptedException e) {
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
                     try {
                         Thread.sleep(100);
-                    } catch (InterruptedException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }
@@ -77,7 +76,7 @@ public class TollBooth {
                 printStatus(truck, moneyDue);
                 try {
                     Thread.sleep(2000);
-                } catch (InterruptedException e) {
+                } catch (Exception e) {
                 }
             }
         });
@@ -114,7 +113,7 @@ public class TollBooth {
                 while (truckQueue.size() != 0) {
                     try {
                         Thread.sleep(1000);
-                    } catch (InterruptedException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }
