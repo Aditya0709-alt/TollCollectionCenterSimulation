@@ -23,7 +23,7 @@ public class CollectionCenter {
                 while (START_COLLECTION) {
                     try {
                         Thread.sleep(20000);
-                    } catch (InterruptedException e) {
+                    } catch (Exception e) {
                         System.out.println();
                         System.out.println("Collection center closed");
                         System.out.println();
@@ -74,7 +74,7 @@ public class CollectionCenter {
 
         try {
             collectionThread.join();
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
