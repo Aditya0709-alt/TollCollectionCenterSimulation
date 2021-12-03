@@ -1,1 +1,1 @@
-# oopm_ia2
+I have used multithreading and sychronization for simulating a toll collection center for trucks. The toll amount is determined based on the number of axles of a particular truck and the weight of the truck in tons. The trucks are generated using the java.util.Random class. The process continues for 50000 milliseconds i.e., 50 seconds which is equivalent to a day in our program. After that the collection stops and the total collection by the toll booths is displayed.
